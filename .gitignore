@@ -1,0 +1,12 @@
+*~
+~*
+*.swp
+$*
+
+.gitconfig
+
+.jekyll-cache/
+.jekyll-metadata
+
+_design/
+_reference/

@@ -1,0 +1,17 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            "**/working/": true
+        },
+        "markdownlint.config": {
+            "MD013": false,
+            "MD043": false,
+            "MD041": false
+        }
+    }
+}
