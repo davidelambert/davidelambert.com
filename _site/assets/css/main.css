@@ -3,6 +3,8 @@ body { width: 100%; margin: 0 auto !important; }
 
 @media (min-width: 960px) { body { max-width: 900px; margin: 0 auto !important; } }
 
+main { min-height: 600px; }
+
 .sans { font-family: "Source Sans Pro", sans-serif; }
 
 .serif { font-family: "Source Serif Pro" serif; }
@@ -13,19 +15,7 @@ body { width: 100%; margin: 0 auto !important; }
 
 .slab { font-family: "Zilla Slab", monospace; }
 
-.card-header { border-bottom: none !important; }
-
-h2, .h2 { margin-top: 3rem !important; }
-
-.hr { height: 1px; background: linear-gradient(to right, #e2e0e0 10%, #524843, #e2e0e0 90%); }
-
-.hr-light { height: 1px; background: linear-gradient(to right, #e2e0e0 10%, #524843, #e2e0e0 90%); }
-
-.hr-dark { height: 1px; background: linear-gradient(to right, #3e332c 10%, #b9b5b3, #3e332c 90%); }
-
-.hr-white { height: 1px; background: linear-gradient(to right, #f7f6f6 10%, #524843, #f7f6f6 90%); }
-
-.hr-black { height: 1px; background: linear-gradient(to right, #291d16 10%, #b9b5b3, #291d16 90%); }
+h1 > a, h1 > a:hover, h1 > a:focus, h1 > a:active { text-decoration: none; }
 
 #toggler.navbar-toggler { background-color: transparent; color: #3e332c; border: none; }
 
@@ -36,6 +26,18 @@ a.menu-link, a.menu-link:link, a.menu-link:visited { color: #3e332c; text-decora
 a.menu-link:hover, a.menu-link:focus, a.menu-link:active { color: #3e332c; text-decoration: underline; }
 
 a.menu-active { pointer-events: none; cursor: default; color: #3e332c; text-decoration: none; font-family: "Zilla Slab", monospace; }
+
+.card-header { border-bottom: none !important; }
+
+.hr { height: 1px; background: linear-gradient(to right, #e2e0e0 10%, #524843, #e2e0e0 90%); }
+
+.hr-light { height: 1px; background: linear-gradient(to right, #e2e0e0 10%, #524843, #e2e0e0 90%); }
+
+.hr-dark { height: 1px; background: linear-gradient(to right, #3e332c 10%, #b9b5b3, #3e332c 90%); }
+
+.hr-white { height: 1px; background: linear-gradient(to right, #f7f6f6 10%, #524843, #f7f6f6 90%); }
+
+.hr-black { height: 1px; background: linear-gradient(to right, #291d16 10%, #b9b5b3, #291d16 90%); }
 
 /*! Bootstrap v4.5.0 (https://getbootstrap.com/) Copyright 2011-2020 The Bootstrap Authors Copyright 2011-2020 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE) */
 :root { --blue: #0033cc; --indigo: #333399; --purple: #5a2d79; --pink: #fb7b7b; --red: #b32626; --orange: #ff9933; --yellow: #ffde00; --green: #009900; --teal: #00cc99; --cyan: #0099ff; --white: #f7f6f6; --gray: #7b7470; --gray-dark: #524843; --primary: #006699; --secondary: #908a86; --success: #00cc99; --info: #0099ff; --warning: #ffde00; --danger: #b32626; --light: #e2e0e0; --dark: #3e332c; --breakpoint-xs: 0; --breakpoint-sm: 576px; --breakpoint-md: 768px; --breakpoint-lg: 992px; --breakpoint-xl: 1200px; --font-family-sans-serif: "Source Sans Pro", sans-serif; --font-family-monospace: "Source Code Pro", monospace; }

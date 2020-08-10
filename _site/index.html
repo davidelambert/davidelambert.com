@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -25,7 +26,7 @@
         <!-- COLLAPSED HEADER & TOGGLER -->
         <div class="navbar navbar-light">
             <div class="container d-flex">
-                <a class="navbar-brand slab px-0 text-dark">David E. Lambert</a>
+                <a class="navbar-brand px-0" href="/index.html"><h1 class="slab text-dark">David E. Lambert</h1></a>
                 <button id="toggler" class="btn navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#mainNav" aria-controls="mainNav" aria-expaned="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -96,104 +97,91 @@
     <div class="hr-light"></div>
     </header>
 
-  <main class="p-4">
+<main>
+  <div class="container">
     <!-- POSTS SECTION -->
-<section id="posts" class="bg-light" style="min-height: 400px;">
-    <div class="container">
+<section id="posts">
 
-        <h1><a class="text-dark" href="/posts.html">Posts</a></h1>
+    <h1 class="px-4 pt-5"><a href="/posts.html" class="text-dark">Posts</a></h1>
+    <!-- BEGIN ROW -->
+    <div class="row px-4">
+        <!-- BEGIN POSTS LOOP -->
+        
 
-        <!-- BEGIN POSTS ROW -->
-        <div class="row">
-
-            <!-- CARD 1 -->
-            <div class="col-sm-6 col-lg-4 py-3">
+            <!-- BEGIN COLUMN -->    
+            <div class="col-md-6 col-lg-4 py-3">                
+                <!-- BEGIN CARD-->
                 <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top img-thumbnail" src="/assets/img/bivariate_choropleth_thumb.png">
+
+                    <!-- IMAGE & HEADER-->
+                    
+                        <img class="card-img-top img-thumbnail" src="/assets/img/bivariate_choropleth_thumb.png" />
+                    
                     <div class="card-header bg-white">
-                        <a class="text-dark" href="/posts/bivariate-choropleths-in-leaflet-for-r.html">
-                            <h5>Bivariate Choropleths in Leaflet for R</h5>
-                        </a>
+                        <h4 class="text-dark"><a class="text-dark" href="/2020/08/06/test-post.html">Test Post</a></h4>
                     </div>
                     <div class="hr-white"></div>
+
+                    <!-- CARD BODY -->
                     <div class="card-body bg-white">
-                        <p class="card-text">
-                            One way to encode multiple variables in a maps, using Leaflet.js for R.
-                        </p>
+                        <!-- BLURB -->
+                        <p class="card-text"><p>A banana is an edible fruit – botanically a berry – produced by several kinds
+of large herbaceous flowering plants...</p>
+                        <!-- READ BUTTON -->
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="/posts/bivariate-choropleths-in-leaflet-for-r.html">
+                                <a href="/2020/08/06/test-post.html">
                                     <button type="button" class="btn btn-sm btn-primary slab">Read</button>
                                 </a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- END CARD 1 -->
 
-            <!-- CARD 2 -->
-            <div class="col-sm-6 col-lg-4 py-3">
+
+                </div>
+                <!-- END CARD -->
+            </div>
+            <!-- END COLUMN -->  
+
+        
+
+            <!-- BEGIN COLUMN -->    
+            <div class="col-md-6 col-lg-4 py-3">                
+                <!-- BEGIN CARD-->
                 <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top img-thumbnail" src="/assets/img/data_wrangling_thumb.png">
+
+                    <!-- IMAGE & HEADER-->
+                    
                     <div class="card-header bg-white">
-                        <a class="text-dark" href="/posts/data-wrangling-bonanza.html">
-                            <h5>Data Wrangling Bonanza</h5>
-                        </a>
+                        <h4 class="text-dark"><a class="text-dark" href="/2020/08/06/test-post-2.html">Test Post 2</a></h4>
                     </div>
                     <div class="hr-white"></div>
+
+                    <!-- CARD BODY -->
                     <div class="card-body bg-white">
-                        <p class="card-text">
-                            Constructing a county-level demographic & election dataset from multiple sources.
-                        </p>
+                        <!-- BLURB -->
+                        <p class="card-text"><p>In some countries, bananas used for cooking may be called “plantains”,
+distinguishing them from dessert bananas. T...</p>
+                        <!-- READ BUTTON -->
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="/posts/data-wrangling-bonanza.html">
+                                <a href="/2020/08/06/test-post-2.html">
                                     <button type="button" class="btn btn-sm btn-primary slab">Read</button>
                                 </a>
                             </div>
                         </div>
                     </div>
+
+
                 </div>
+                <!-- END CARD -->
             </div>
-            <!-- END CARD 2 -->
+            <!-- END COLUMN -->  
 
-
-            <!-- CARD 3 -->
-            <div class="col-sm-6 col-lg-4 py-3">
-                <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top img-thumbnail" src="/assets/img/combined_density_thumb.png">
-                    <div class="card-header bg-white">
-                        <a class="text-dark" href="/posts/combined-density-box-plots.html">
-                            <h5>Combined Density/Box Plots</h5>
-                        </a>
-                    </div>
-                    <div class="hr-white"></div>
-                    <div class="card-body bg-white">
-                        <p class="card-text">
-                            Density plot to visualize over distribution shape, with a boxplot of distribution summary
-                            stats & outliers as a rug.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a href="/posts/combined-density-box-plots.html">
-                                    <button type="button" class="btn btn-sm btn-primary slab">Read</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- END CARD 3 -->
-
-            <div class="col-sm-6 col-md-4 py-3"></div>
-            <div class="col-sm-6 col-md-4 py-3 d-none d-sm-inline-flex"></div>
-            <div class="col-sm-6 col-md-4 py-3 d-none d-sm-inline-flex"></div>
-            <div class="col-sm-6 col-md-4 py-3 d-none d-sm-inline-flex"></div>
-        </div>
-        <!-- END ROW -->
-
+        
+        <!-- END POSTS LOOP -->
     </div>
+    <!-- END ROW -->
 </section>
 <!-- END POSTS SECTION -->
 
@@ -205,44 +193,28 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- PROJECTS SECTION -->
-<section id="projects" class="bg-light" style="min-height:400px;">
-    <div class="hr-fade"></div>
-    <div class="container py-4 px-4">
-        <h1 class="px-2">Projects</h1>
+<section id="projects">
+        
 
-        <!-- BEGIN ROW -->
-        <div class="row px-2">
-            <div class="col col-12 col-sm-6 col-md-4 py-3"></div>
-            <div class="col col-12 col-sm-6 col-md-4 py-3"></div>
-            <div class="col col-12 col-sm-6 col-md-4 py-3"></div>
-            <div class="col col-12 col-sm-6 col-md-4 py-3 d-none d-sm-inline-flex"></div>
-            <div class="col col-12 col-sm-6 col-md-4 py-3 d-none d-sm-inline-flex"></div>
-            <div class="col col-12 col-sm-6 col-md-4 py-3 d-none d-sm-inline-flex"></div>
-        </div>
-        <!-- END ROW -->
+<!-- BEGIN ROW -->
+<div class="row">
+<h1>Projects</h1>
 
-    </div>
+    <div class="col col-12 col-md-6 col-md-4 py-3"></div>
+    <div class="col col-12 col-md-6 col-md-4 py-3"></div>
+    <div class="col col-12 col-md-6 col-md-4 py-3"></div>
+    <div class="col col-12 col-md-6 col-md-4 py-3 d-none d-sm-inline-flex"></div>
+    <div class="col col-12 col-md-6 col-md-4 py-3 d-none d-sm-inline-flex"></div>
+    <div class="col col-12 col-md-6 col-md-4 py-3 d-none d-sm-inline-flex"></div>
+
+</div>
+<!-- END ROW -->
+
 </section>
 <!-- END PROJECTS SECTION -->
-  </main>
+  </div>
+</main>
 
 <!-- FOOTER -->
 <footer class="bg-light" style="min-height: 100px;">
@@ -274,4 +246,5 @@
 
 
 </body>
+
 </html>

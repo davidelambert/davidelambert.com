@@ -1,6 +1,20 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-{{ content }}
+
+<section id="post">
+    <h1 class="px-4 pt-5">{{ page.title }}</h1>
+    <div class="row px-4">
+        
+        <!-- POST FRONT MATTER -->
+        <p><em>Posted {{ page.date | date_to_string }} by {{ page.author }}</em></p>
+
+        <!-- CONTENT COLUMN -->
+        <div class="col">
+            {{ content }}
+        </div>
+
+    </div>
+    <!-- END ROW -->
+
+</section>

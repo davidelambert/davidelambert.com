@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -25,7 +26,7 @@
         <!-- COLLAPSED HEADER & TOGGLER -->
         <div class="navbar navbar-light">
             <div class="container d-flex">
-                <a class="navbar-brand slab px-0 text-dark">David E. Lambert</a>
+                <a class="navbar-brand px-0" href="/index.html"><h1 class="slab text-dark">David E. Lambert</h1></a>
                 <button id="toggler" class="btn navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#mainNav" aria-controls="mainNav" aria-expaned="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -96,34 +97,98 @@
     <div class="hr-light"></div>
     </header>
 
-  <main class="p-4">
-    <h1>Posts</h1>
+<main>
+  <div class="container">
+    <section id="posts">
 
-<main id="main">
+    <h1 class="px-4 pt-5">Posts</h1>
+    <!-- BEGIN ROW -->
+    <div class="row px-4">
+        <!-- BEGIN POSTS LOOP -->
+        
+
+            <!-- BEGIN COLUMN -->    
+            <div class="col-md-6 col-lg-4 py-3">                
+                <!-- BEGIN CARD-->
+                <div class="card mb-4 shadow-sm">
+
+                    <!-- OPTIONAL THUMBNAIL 900px*300px recommended -->
+                    
+                        <img class="card-img-top img-thumbnail" src="/assets/img/bivariate_choropleth_thumb.png" />
+                    
+
+                    <!-- HEADER -->
+                    <div class="card-header bg-white">
+                        <h4 class="text-dark"><a class="text-dark" href="/2020/08/06/test-post.html">Test Post</a></h4>
+                    </div>
+                    <div class="hr-white"></div>
+
+                    <!-- CARD BODY -->
+                    <div class="card-body bg-white">
+                        <!-- BLURB -->
+                        <p class="card-text"><p>A banana is an edible fruit – botanically a berry – produced by several kinds
+of large herbaceous flowering plants...</p>
+                        <!-- READ BUTTON -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="/2020/08/06/test-post.html">
+                                    <button type="button" class="btn btn-sm btn-primary slab">Read</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
 
-    
+                </div>
+                <!-- END CARD -->
+            </div>
+            <!-- END COLUMN -->  
 
-        <h2><a href="/2020/08/06/test-post.html">Test Post</a></h2>
-        <p>A banana is an edible fruit – botanically a berry – produced by several kinds
-of large herbaceous flowering plants in the genus Musa.</p>
+        
+
+            <!-- BEGIN COLUMN -->    
+            <div class="col-md-6 col-lg-4 py-3">                
+                <!-- BEGIN CARD-->
+                <div class="card mb-4 shadow-sm">
+
+                    <!-- OPTIONAL THUMBNAIL 900px*300px recommended -->
+                    
+
+                    <!-- HEADER -->
+                    <div class="card-header bg-white">
+                        <h4 class="text-dark"><a class="text-dark" href="/2020/08/06/test-post-2.html">Test Post 2</a></h4>
+                    </div>
+                    <div class="hr-white"></div>
+
+                    <!-- CARD BODY -->
+                    <div class="card-body bg-white">
+                        <!-- BLURB -->
+                        <p class="card-text"><p>In some countries, bananas used for cooking may be called “plantains”,
+distinguishing them from dessert bananas. T...</p>
+                        <!-- READ BUTTON -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="/2020/08/06/test-post-2.html">
+                                    <button type="button" class="btn btn-sm btn-primary slab">Read</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
 
-    
+                </div>
+                <!-- END CARD -->
+            </div>
+            <!-- END COLUMN -->  
 
-        <h2><a href="/2020/08/06/test-post-2.html">Test Post 2</a></h2>
-        <p>In some countries, bananas used for cooking may be called “plantains”,
-distinguishing them from dessert bananas. The fruit is variable in size, color,
-and firmness, but is usually elongated and curved, with soft flesh rich in
-starch covered with a rind, which may be green, yellow, red, purple, or brown
-when ripe.</p>
+        
+        <!-- END POSTS LOOP -->
+    </div>
+    <!-- END ROW -->
 
-
-    
-
-
+</section>
+  </div>
 </main>
-  </main>
 
 <!-- FOOTER -->
 <footer class="bg-light" style="min-height: 100px;">
@@ -155,4 +220,5 @@ when ripe.</p>
 
 
 </body>
+
 </html>

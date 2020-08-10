@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -25,7 +26,7 @@
         <!-- COLLAPSED HEADER & TOGGLER -->
         <div class="navbar navbar-light">
             <div class="container d-flex">
-                <a class="navbar-brand slab px-0 text-dark">David E. Lambert</a>
+                <a class="navbar-brand px-0" href="/index.html"><h1 class="slab text-dark">David E. Lambert</h1></a>
                 <button id="toggler" class="btn navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#mainNav" aria-controls="mainNav" aria-expaned="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -96,10 +97,18 @@
     <div class="hr-light"></div>
     </header>
 
-  <main class="p-4">
-    <h1>Test Post 2</h1>
-<p>06 Aug 2020 - David</p>
-<p>In some countries, bananas used for cooking may be called “plantains”,
+<main>
+  <div class="container">
+    <section id="post">
+    <h1 class="px-4 pt-5">Test Post 2</h1>
+    <div class="row px-4">
+        
+        <!-- POST FRONT MATTER -->
+        <p><em>Posted 06 Aug 2020 by David</em></p>
+
+        <!-- CONTENT COLUMN -->
+        <div class="col">
+            <p>In some countries, bananas used for cooking may be called “plantains”,
 distinguishing them from dessert bananas. The fruit is variable in size, color,
 and firmness, but is usually elongated and curved, with soft flesh rich in
 starch covered with a rind, which may be green, yellow, red, purple, or brown
@@ -108,7 +117,15 @@ when ripe.</p>
 <p>A banana is an edible fruit – botanically a berry – produced by several kinds
 of large herbaceous flowering plants in the genus Musa.</p>
 
-  </main>
+        </div>
+
+    </div>
+    <!-- END ROW -->
+
+</section>
+
+  </div>
+</main>
 
 <!-- FOOTER -->
 <footer class="bg-light" style="min-height: 100px;">
@@ -140,4 +157,5 @@ of large herbaceous flowering plants in the genus Musa.</p>
 
 
 </body>
+
 </html>

@@ -2,17 +2,54 @@
 layout: default
 title: Posts
 ---
-<h1>Posts</h1>
 
-<main id="main">
+<section id="posts">
+
+    <h1 class="px-4 pt-5">Posts</h1>
+    <!-- BEGIN ROW -->
+    <div class="row px-4">
+        <!-- BEGIN POSTS LOOP -->
+        {% for post in site.posts %}
+
+            <!-- BEGIN COLUMN -->    
+            <div class="col-md-6 col-lg-4 py-3">                
+                <!-- BEGIN CARD-->
+                <div class="card mb-4 shadow-sm">
+
+                    <!-- OPTIONAL THUMBNAIL 900px*300px recommended -->
+                    {% if post.thumbnail %}
+                        <img class="card-img-top img-thumbnail" src="{{ post.thumbnail }}" />
+                    {% endif %}
+
+                    <!-- HEADER -->
+                    <div class="card-header bg-white">
+                        <h4 class="text-dark"><a class="text-dark" href="{{ post.url }}">{{ post.title }}</a></h4>
+                    </div>
+                    <div class="hr-white"></div>
+
+                    <!-- CARD BODY -->
+                    <div class="card-body bg-white">
+                        <!-- BLURB -->
+                        <p class="card-text">{{ post.excerpt | truncate: 120 }}</p>
+                        <!-- READ BUTTON -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="{{ post.url }}">
+                                    <button type="button" class="btn btn-sm btn-primary slab">Read</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
 
-    {% for post in site.posts %}
+                </div>
+                <!-- END CARD -->
+            </div>
+            <!-- END COLUMN -->  
 
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        {{ post.excerpt }}
+        {% endfor %}
+        <!-- END POSTS LOOP -->
+    </div>
+    <!-- END ROW -->
 
-    {% endfor %}
-
-
-</main>
+</section>
